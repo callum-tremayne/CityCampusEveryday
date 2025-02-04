@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Menu - City Campus</title>
+  <!-- Preconnect and load Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Top Container / Header -->
+  <div class="top-container">
+    <!-- Header image (update the src as needed) -->
+    <img src="https://portal.ombiel.co.uk/assets/LeedsBeckettUniversity/LeedsBeckett/FoodMenu/BK-Header01.png" alt="Beckett Kitchen" class="bkitchen">
+    <div class="menu-type">City Campus</div>
+  </div>
+
+    <!-- Main Title -->
+    <div class="main-title">
+      <div class="title">Everyday Menu</div>
+    </div>
+  
+  <!-- Accordion Section: Wrap it up -->
+  <section class="menu-category">
+    <button class="collapsible">
+      <span class="menu-category-title">Wrap it up - £5.50</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="content">
+      <p class="menu-description"><em>Choose from a daily rotating menu of fillings:</em></p>
+      <div class="menu-item">
+        <h4>Bases</h4>
+        <p>Tortilla Wrap, Pitta Bread, Sourdough Flatbread</p>
+      </div>
+      <div class="menu-item">
+        <h4>Fillings</h4>
+        <p>Lamb Shish Kebab, Marinated Chicken, Donner Kebab, Mediterranean Vegetables, Sweet Potato Curry Bites, Halloumi</p>
+      </div>
+      <div class="menu-item">
+        <h4>Salad</h4>
+        <p>Pickled Red Cabbage, Iceberg Lettuce, Red Onion, Cucumber, Tomato, Jalapenos, Carrot, Pomegranate Seeds, Houmous and Lemon Oil</p>
+      </div>
+      <div class="menu-item">
+        <h4>Sauce</h4>
+        <p>Chipotle Mayo, Vegan Garlic Mayo, Habanero Hot Sauce, Vegan Mayo, Louisiana BBQ Sauce</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Accordion Section: Street Food Tacos -->
+  <section class="menu-category">
+    <button class="collapsible">
+      <span class="menu-category-title">Street Food Tacos - £5.95</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="content">
+      <p class="menu-description"><em>Choose from seasonal fillings:</em></p>
+      <div class="menu-item">
+        <h4>Bases</h4>
+        <p>Soft Corn Tortillas or Naan Bread</p>
+      </div>
+      <div class="menu-item">
+        <h4>Fillings</h4>
+        <p>Spicy Beef, Pulled Pork, Smoked Tofu, Sweet Potato, Butternut Squash with Chilli &amp; Feta</p>
+      </div>
+      <div class="menu-item">
+        <h4>Salad</h4>
+        <p>Sweetcorn, Pickled Red Onion, Sour Cream &amp; Guacamole, Salsa</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Accordion Section: Jacket Potato -->
+  <section class="menu-category">
+    <button class="collapsible">
+      <span class="menu-category-title">Jacket Potato with Butter - £2.50</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="content">
+      <div class="menu-item">
+        <h4>Plain</h4>
+        <p>Simple baked potato.</p>
+      </div>
+      <div class="menu-item">
+        <h4>Extras</h4>
+        <ul>
+          <li>Baked Beans – £3.40</li>
+          <li>Chilli Con Carne – £4.50</li>
+          <li>Cheese – £3.95</li>
+          <li>Tuna – £3.95</li>
+          <li>Cheese &amp; Beans – £4.50</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Accordion Section: Salad Boxes -->
+  <section class="menu-category">
+    <button class="collapsible">
+      <span class="menu-category-title">Salad Boxes</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="content">
+      <p class="menu-description"><em>Prepared daily with a fresh range of flavours.</em></p>
+      <div class="menu-item">
+        <h4>Regular</h4>
+        <p>£3.95</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Bottom Container / Disclaimer -->
+  <footer class="bottom-container">
+     <a href="https://www.leedsbeckett.ac.uk/beckettfood/rewards/">
+      <img src="https://portal.ombiel.co.uk/assets/LeedsBeckettUniversity/LeedsBeckett/FoodMenu/2024-25/UpayaPP-10.png" alt="Rewards" />
+    </a>
+   <span class="tnc">
+      Food Allergies &amp; Intolerances -<br>
+      Before you order your food and drinks please ask a member of staff if you would like to know about our ingredients.
+    </span>
+  </footer>
+  
+  <!-- Accordion JavaScript -->
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var collapsibles = document.getElementsByClassName('collapsible');
+  Array.from(collapsibles).forEach(function(collapsible) {
+    collapsible.addEventListener('click', function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+});
+  </script>
+</body>
+</html>
