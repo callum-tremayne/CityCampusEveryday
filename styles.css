@@ -3,8 +3,7 @@ body {
   margin: 0;
   width: 100%;
   min-height: 100vh;
-  background-image: 
-    radial-gradient(rgb(17, 17, 17) 30%, transparent 30%),
+  background-image: radial-gradient(rgb(17, 17, 17) 30%, transparent 30%),
     radial-gradient(rgb(17, 17, 17) 30%, transparent 30%);
   background-position: 0px 0px, 64px 64px;
   background-size: 128px 128px;
@@ -12,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #e0e0e0;
   text-size-adjust: none;
 }
@@ -27,7 +26,7 @@ body {
   align-items: center;
   gap: 20px;
   border-radius: 0 0 50px 50px;
-  background: #7B0EE5;
+  background: #7b0ee5;
   margin-bottom: 45px;
   position: relative;
 }
@@ -40,14 +39,15 @@ body {
 .menu-type {
   width: auto;
   height: 60px;
-  color: #FFF;
-  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 900;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   white-space: nowrap;
+  gap: 8px;
 }
 
 /* Main Title */
@@ -56,11 +56,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
 }
 .title {
-  color: #FFF;
-  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 900;
   padding-bottom: 30px;
@@ -73,7 +72,7 @@ body {
   margin-bottom: 15px;
   border-radius: 20px;
   overflow: hidden;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -82,7 +81,7 @@ body {
   background-color: #fff;
   color: #333;
   border: none;
-  padding: 30px ;
+  padding: 30px;
   font-size: 18px;
   display: flex;
   justify-content: space-between;
@@ -90,12 +89,13 @@ body {
   cursor: pointer;
   transition: background 0.3s ease;
 }
-.collapsible:hover, .collapsible.active {
+.collapsible:hover,
+.collapsible.active {
   background-color: #5d5c5c;
-  color:#fff;
+  color: #fff;
 }
 .menu-category-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
 }
 .arrow {
@@ -132,7 +132,8 @@ body {
   color: #ff4081;
   font-weight: bold;
 }
-.menu-item p, .menu-item li {
+.menu-item p,
+.menu-item li {
   margin: 5px 0 0 0;
   font-size: 14px;
   color: #666;
@@ -149,12 +150,12 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 50px 50px 0 0;
-  background: #7B0EE5;
+  background: #7b0ee5;
 }
 
 /* Adjust the rewards image size */
 .bottom-container img {
-  width: 300px; 
+  width: 300px;
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
@@ -162,8 +163,8 @@ body {
 }
 
 .tnc {
-  color: #FFF;
-  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 700;
   padding: 20px;
