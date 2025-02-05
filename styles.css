@@ -19,29 +19,93 @@ body {
 /* Top Container / Header */
 .top-container {
   width: 100%;
-  padding: 15px 30px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
   border-radius: 0 0 50px 50px;
   background: #7b0ee5;
-  margin-bottom: 45px;
   position: relative;
 }
-.bkitchen {
+
+.location {
+  margin-left: 20px;
+}
+
+/* Location Container in the Top Header */
+.location-container {
+  display: inline-block;
+  position: relative;
+  margin-left: 20px;
+}
+
+.location-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.location-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+}
+.location-switch-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  padding-left: 36px;
+  cursor: pointer;
+}
+/* Arrow styling for the location dropdown */
+.location-arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  transform: rotate(0deg); /* Initially points down */
+}
+
+/* When active, rotate the arrow 180deg */
+.location-container.active .location-arrow {
+  transform: rotate(180deg);
+}
+
+/* The dropdown content (initially hidden) */
+.location-dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  background-color: #7b0ee5;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding-top: 10px;
+}
+
+.location-container.active .location-dropdown {
+  max-height: 100px; /* adjust as needed */
+}
+
+.header-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.header-image img {
   width: 300px;
   height: auto;
   border-radius: 20px;
-  flex-shrink: 0;
 }
+
 .menu-type {
   width: auto;
   height: 60px;
   color: #fff;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
   display: inline-flex;
   justify-content: center;
@@ -62,7 +126,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 900;
-  padding-bottom: 30px;
+  padding: 30px 0px;
   text-align: center;
 }
 
@@ -167,7 +231,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 700;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   text-align: center;
 }
 
