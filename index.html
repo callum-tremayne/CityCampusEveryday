@@ -1,145 +1,378 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Food Menu - City Campus</title>
-  <!-- Preconnect and load Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <!-- Top Container / Header -->
-  <div class="top-container">
-    <!-- Header image (update the src as needed) -->
-    <img src="https://portal.ombiel.co.uk/assets/LeedsBeckettUniversity/LeedsBeckett/FoodMenu/BK-Header01.png" alt="Beckett Kitchen" class="bkitchen">
-    <div class="menu-type">City Campus</div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food Menu - City Campus</title>
+    <!-- Preconnect and load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Container / Header -->
+    <div class="top-container">
+      <div class="location-container">
+        <div class="location-header">
+          <div class="menu-type">
+            <!-- Left location icon -->
+            <svg
+              class="location-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="40"
+              viewBox="0 0 38 50"
+              fill="none"
+            >
+              <path
+                d="M16.823 48.9912C2.63379 28.421 0 26.3099 0 18.75C0 8.39463 8.39463 0 18.75 0C29.1054 0 37.5 8.39463 37.5 18.75C37.5 26.3099 34.8662 28.421 20.6769 48.9912C19.7458 50.3363 17.7541 50.3362 16.823 48.9912ZM18.75 26.5625C23.0647 26.5625 26.5625 23.0647 26.5625 18.75C26.5625 14.4353 23.0647 10.9375 18.75 10.9375C14.4353 10.9375 10.9375 14.4353 10.9375 18.75C10.9375 23.0647 14.4353 26.5625 18.75 26.5625Z"
+                fill="#FF6AA6"
+              ></path>
+            </svg>
+            <!-- Main location text -->
+            <span class="location-text">City Campus</span>
+            <!-- Down arrow that will rotate -->
+            <svg
+              class="location-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="15"
+              viewBox="0 0 18 10"
+              fill="none"
+            >
+              <path
+                d="M8.34867 9.73477L1.01526 2.40132C0.661579 2.04764 0.661579 1.47422 1.01526 1.12058L1.87059 0.265254C2.22367 -0.0878259 2.79591 -0.0885054 3.14982 0.263745L8.98906 6.07563L14.8283 0.263745C15.1822 -0.0885054 15.7544 -0.0878259 16.1075 0.265254L16.9628 1.12058C17.3165 1.47426 17.3165 2.04767 16.9628 2.40132L9.62945 9.73477C9.27576 10.0884 8.70235 10.0884 8.34867 9.73477Z"
+                fill="white"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <!-- The dropdown content (initially hidden) -->
+        <div class="location-dropdown">
+          <span class="location-switch-text"
+            ><a href="">Headingley Campus</a></span
+          >
+        </div>
+      </div>
+
+      <!-- Header image (update the src as needed) -->
+      <div class="header-image">
+        <img
+          src="https://portal.ombiel.co.uk/assets/LeedsBeckettUniversity/LeedsBeckett/FoodMenu/BK-Header01.png"
+          alt="Beckett Kitchen"
+        />
+      </div>
+    </div>
 
     <!-- Main Title -->
     <div class="main-title">
-      <div class="title">Everyday Menu</div>
+      <div class="title">Everyday Lunch Menu</div>
     </div>
-  
-  <!-- Accordion Section: Wrap it up -->
-  <section class="menu-category">
-    <button class="collapsible">
-      <span class="menu-category-title">Wrap it up - £5.50</span>
-      <span class="arrow">▼</span>
-    </button>
-    <div class="content">
-      <p class="menu-description"><em>Choose from a daily rotating menu of fillings:</em></p>
-      <div class="menu-item">
-        <h4>Bases</h4>
-        <p>Tortilla Wrap, Pitta Bread, Sourdough Flatbread</p>
+
+    <!-- Accordion Section: Wrap it up -->
+    <section class="menu-category">
+      <button class="collapsible">
+        <span class="menu-category-title">Wrap it up - £5.50</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="content">
+        <p class="menu-description">
+          <em>Choose from a daily rotating menu of fillings:</em>
+        </p>
+        <div class="menu-item">
+          <h4>Bases</h4>
+          <p>Tortilla Wrap, Pitta Bread, Sourdough Flatbread</p>
+        </div>
+        <div class="menu-item">
+          <h4>Fillings</h4>
+          <p>
+            Lamb Shish Kebab, Marinated Chicken, Donner Kebab, Mediterranean
+            Vegetables, Sweet Potato Curry Bites, Halloumi
+          </p>
+        </div>
+        <div class="menu-item">
+          <h4>Salad</h4>
+          <p>
+            Pickled Red Cabbage, Iceberg Lettuce, Red Onion, Cucumber, Tomato,
+            Jalapenos, Carrot, Pomegranate Seeds, Houmous and Lemon Oil
+          </p>
+        </div>
+        <div class="menu-item">
+          <h4>Sauce</h4>
+          <p>
+            Chipotle Mayo, Vegan Garlic Mayo, Habanero Hot Sauce, Vegan Mayo,
+            Louisiana BBQ Sauce
+          </p>
+        </div>
       </div>
-      <div class="menu-item">
-        <h4>Fillings</h4>
-        <p>Lamb Shish Kebab, Marinated Chicken, Donner Kebab, Mediterranean Vegetables, Sweet Potato Curry Bites, Halloumi</p>
+    </section>
+
+    <!-- Accordion Section: Street Food Tacos -->
+    <section class="menu-category">
+      <button class="collapsible">
+        <span class="menu-category-title">Street Food Tacos - £5.95</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="content">
+        <p class="menu-description"><em>Choose from seasonal fillings:</em></p>
+        <div class="menu-item">
+          <h4>Bases</h4>
+          <p>Soft Corn Tortillas or Naan Bread</p>
+        </div>
+        <div class="menu-item">
+          <h4>Fillings</h4>
+          <p>
+            Spicy Beef, Pulled Pork, Smoked Tofu, Sweet Potato, Butternut Squash
+            with Chilli &amp; Feta
+          </p>
+        </div>
+        <div class="menu-item">
+          <h4>Salad</h4>
+          <p>Sweetcorn, Pickled Red Onion, Sour Cream &amp; Guacamole, Salsa</p>
+        </div>
       </div>
-      <div class="menu-item">
-        <h4>Salad</h4>
-        <p>Pickled Red Cabbage, Iceberg Lettuce, Red Onion, Cucumber, Tomato, Jalapenos, Carrot, Pomegranate Seeds, Houmous and Lemon Oil</p>
+    </section>
+
+    <!-- Accordion Section: Jacket Potato -->
+    <section class="menu-category">
+      <button class="collapsible">
+        <span class="menu-category-title">Jacket Potato with Butter</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="content">
+        <div class="menu-item">
+          <h4>Plain</h4>
+          <p>Simple baked potato - <strong>£2.50</strong></p>
+        </div>
+        <div class="menu-item">
+          <h4>Extras</h4>
+          <ul>
+            <li>Baked Beans – <strong>£3.40</strong></li>
+            <li>Chilli Con Carne – <strong>£4.50</strong></li>
+            <li>Cheese – <strong>£3.95</strong></li>
+            <li>Tuna – <strong>£3.95</strong></li>
+            <li>Cheese &amp; Beans – <strong>£4.50</strong></li>
+          </ul>
+        </div>
       </div>
-      <div class="menu-item">
-        <h4>Sauce</h4>
-        <p>Chipotle Mayo, Vegan Garlic Mayo, Habanero Hot Sauce, Vegan Mayo, Louisiana BBQ Sauce</p>
+    </section>
+
+    <!-- Accordion Section: Salad Boxes -->
+    <section class="menu-category">
+      <button class="collapsible">
+        <span class="menu-category-title">Salad Boxes</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="content">
+        <p class="menu-description">
+          <em>Prepared daily with a fresh range of flavours.</em>
+        </p>
+        <div class="menu-item">
+          <h4>Regular</h4>
+          <p><strong>£3.95</strong></p>
+        </div>
       </div>
+    </section>
+
+    <!-- Breakfast Section -->
+
+    <!-- Main Title -->
+    <div class="main-title">
+      <div class="title">Breakfast Menu</div>
     </div>
-  </section>
-  
-  <!-- Accordion Section: Street Food Tacos -->
-  <section class="menu-category">
-    <button class="collapsible">
-      <span class="menu-category-title">Street Food Tacos - £5.95</span>
-      <span class="arrow">▼</span>
-    </button>
-    <div class="content">
-      <p class="menu-description"><em>Choose from seasonal fillings:</em></p>
-      <div class="menu-item">
-        <h4>Bases</h4>
-        <p>Soft Corn Tortillas or Naan Bread</p>
+
+    <!-- Accordion Section: Breakfasts -->
+    <section class="menu-category">
+      <button class="collapsible">
+        <span class="menu-category-title">Breakfasts</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="content">
+        <div class="menu-item">
+          <h4>Big Breakfast</h4>
+          <p>
+            Sausage, bacon rasher, and a choice of four items (Choose from:
+            beans, egg, mushrooms, toast, hash brown, tomato) -
+            <strong>£4.50</strong>
+          </p>
+        </div>
+        <div class="menu-item">
+          <h4>Vegan Breakfast</h4>
+          <p>
+            Two vegetable sausages, mushrooms, beans, hash brown and toast -
+            <strong>£3.80</strong>
+          </p>
+        </div>
+        <div class="menu-item">
+          <h4>Mega Brunch</h4>
+          <p>
+            Two sausages, two bacon rashers, beans, egg, mushrooms, hash brown,
+            tomato and toast -
+            <strong>£5.50</strong>
+          </p>
+        </div>
       </div>
-      <div class="menu-item">
-        <h4>Fillings</h4>
-        <p>Spicy Beef, Pulled Pork, Smoked Tofu, Sweet Potato, Butternut Squash with Chilli &amp; Feta</p>
+    </section>
+
+    <!-- Accordion Section: Sandwiches -->
+    <section class="menu-category">
+      <button class="collapsible">
+        <span class="menu-category-title">Sandwiches</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="content">
+        <div class="menu-item">
+          <h4>Bacon Sandwich</h4>
+          <p>
+            <strong>£2.50</strong>
+          </p>
+        </div>
+        <div class="menu-item">
+          <h4>Sausage Sandwich</h4>
+          <p>
+            <strong>£2.50</strong>
+          </p>
+        </div>
+        <div class="menu-item">
+          <h4>Bacon and Sausage Sandwich</h4>
+          <p>
+            <strong>£3.80</strong>
+          </p>
+        </div>
+        <div class="menu-item">
+          <h4>Egg Sandwich</h4>
+          <p>
+            <strong>£1.40</strong>
+          </p>
+        </div>
       </div>
-      <div class="menu-item">
-        <h4>Salad</h4>
-        <p>Sweetcorn, Pickled Red Onion, Sour Cream &amp; Guacamole, Salsa</p>
+    </section>
+
+    <!-- Accordion Section: Classics -->
+    <section class="menu-category">
+      <button class="collapsible">
+        <span class="menu-category-title">Classics</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="content">
+        <div class="menu-item">
+          <h4>Porridge</h4>
+          <p><strong>£1.65</strong> <br /><i>toppings + 15p</i></p>
+        </div>
+        <div class="menu-item">
+          <h4>Cereal and Milk</h4>
+          <p>
+            <strong>£1.25</strong>
+          </p>
+        </div>
+        <div class="menu-item">
+          <h4>Pastries from:</h4>
+          <p>
+            <strong>£1.25</strong>
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-  
-  <!-- Accordion Section: Jacket Potato -->
-  <section class="menu-category">
-    <button class="collapsible">
-      <span class="menu-category-title">Jacket Potato with Butter - £2.50</span>
-      <span class="arrow">▼</span>
-    </button>
-    <div class="content">
-      <div class="menu-item">
-        <h4>Plain</h4>
-        <p>Simple baked potato.</p>
+    </section>
+
+    <!-- Accordion Section: Morning Deal -->
+    <section class="menu-category">
+      <button class="collapsible">
+        <span class="menu-category-title">Morning Deal</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="content">
+        <div class="menu-item">
+          <h4>Any Regular Hot Drink + Any Pastry</h4>
+          <p>
+            <strong>£3.50</strong>
+          </p>
+        </div>
       </div>
-      <div class="menu-item">
-        <h4>Extras</h4>
-        <ul>
-          <li>Baked Beans – £3.40</li>
-          <li>Chilli Con Carne – £4.50</li>
-          <li>Cheese – £3.95</li>
-          <li>Tuna – £3.95</li>
-          <li>Cheese &amp; Beans – £4.50</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Accordion Section: Salad Boxes -->
-  <section class="menu-category">
-    <button class="collapsible">
-      <span class="menu-category-title">Salad Boxes</span>
-      <span class="arrow">▼</span>
-    </button>
-    <div class="content">
-      <p class="menu-description"><em>Prepared daily with a fresh range of flavours.</em></p>
-      <div class="menu-item">
-        <h4>Regular</h4>
-        <p>£3.95</p>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Bottom Container / Disclaimer -->
-  <footer class="bottom-container">
-     <a href="https://www.leedsbeckett.ac.uk/beckettfood/rewards/">
-      <img src="https://portal.ombiel.co.uk/assets/LeedsBeckettUniversity/LeedsBeckett/FoodMenu/2024-25/UpayaPP-10.png" alt="Rewards" />
-    </a>
-   <span class="tnc">
-      Food Allergies &amp; Intolerances -<br>
-      Before you order your food and drinks please ask a member of staff if you would like to know about our ingredients.
-    </span>
-  </footer>
-  
-  <!-- Accordion JavaScript -->
-  <script>
-document.addEventListener('DOMContentLoaded', function () {
-  var collapsibles = document.getElementsByClassName('collapsible');
-  Array.from(collapsibles).forEach(function(collapsible) {
-    collapsible.addEventListener('click', function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  });
-});
-  </script>
-</body>
+    </section>
+
+    <!-- Bottom Container / Disclaimer -->
+    <footer class="bottom-container">
+      <a
+        href="https://www.leedsbeckett.ac.uk/beckettfood/rewards/"
+        target="_blank"
+      >
+        <img
+          src="https://portal.ombiel.co.uk/assets/LeedsBeckettUniversity/LeedsBeckett/FoodMenu/2024-25/UpayaPP-10.png"
+          alt="Rewards"
+        />
+      </a>
+      <span class="tnc">
+        Food Allergies &amp; Intolerances -<br />
+        Before you order your food and drinks please ask a member of staff if
+        you would like to know about our ingredients.
+      </span>
+    </footer>
+
+    <!-- Accordion JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var collapsibles = document.getElementsByClassName("collapsible");
+        Array.from(collapsibles).forEach(function (collapsible) {
+          collapsible.addEventListener("click", function () {
+            // Close all other accordions
+            Array.from(collapsibles).forEach(function (other) {
+              if (other !== collapsible) {
+                other.classList.remove("active");
+                other.nextElementSibling.style.maxHeight = null;
+              }
+            });
+
+            // Toggle the clicked accordion
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Existing listener for the location container toggling
+        var locationContainer = document.querySelector(".location-container");
+        var locationHeader =
+          locationContainer.querySelector(".location-header");
+
+        locationHeader.addEventListener("click", function (e) {
+          // Prevent the document click event from immediately closing the dropdown
+          e.stopPropagation();
+          // Toggle the active state
+          locationContainer.classList.toggle("active");
+          var dropdown = locationContainer.querySelector(".location-dropdown");
+          if (dropdown.style.maxHeight && dropdown.style.maxHeight !== "0px") {
+            dropdown.style.maxHeight = null;
+          } else {
+            dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+          }
+        });
+
+        // Listen for clicks anywhere in the document.
+        document.addEventListener("click", function (e) {
+          // If the click target is not within the location container,
+          // then close the dropdown.
+          if (!locationContainer.contains(e.target)) {
+            locationContainer.classList.remove("active");
+            var dropdown =
+              locationContainer.querySelector(".location-dropdown");
+            if (dropdown) {
+              dropdown.style.maxHeight = null;
+            }
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
